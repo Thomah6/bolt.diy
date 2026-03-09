@@ -12,10 +12,11 @@ dotenv.config({ path: '.env' });
 dotenv.config();
 
 export default defineConfig((config) => {
-   preview: {
+  
+  return {
+     preview: {
       allowedHosts: true,
     },
-  return {
     define: {
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
     },

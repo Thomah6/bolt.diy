@@ -17,6 +17,9 @@ export default defineConfig((config) => {
      preview: {
       allowedHosts: true,
     },
+    server: {
+      allowedHosts: true,
+    },
     define: {
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
     },
